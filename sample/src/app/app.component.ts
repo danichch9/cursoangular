@@ -10,4 +10,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'sample';
+  name="Daniel";
+  data=[1,2,3,4,5,6]
+  handlerClick(ev:Event){
+    ev.stopPropagation();
+    this.data.push(this.data.length+1)
+  }
 }
